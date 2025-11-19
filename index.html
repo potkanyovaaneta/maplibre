@@ -20,11 +20,19 @@
         container: 'map',
         style: 'https://demotiles.maplibre.org/style.json',
         center: [17.25, 49.5],
-        zoom: 8
+        zoom: 4
     });
 
-    const marker = new maplibregl.Marker()
+    const marker1 = new maplibregl.Marker()
         .setLngLat([17.25, 49.5])
+        .addTo(map);
+
+    const marker2 = new maplibregl.Marker()
+        .setLngLat([17.50, 49.0])
+        .addTo(map);
+        
+    const marker3 = new maplibregl.Marker()
+        .setLngLat([17.0, 50.0])
         .addTo(map);
 </script>
 </body>
